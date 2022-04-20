@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Estourando Balões</title>
+    <link rel="stylesheet" href="" />
+
+    <script lang="javascript" src="./js/baloon.js"></script>
+
+    <style>
+      .relogio {
+        color: red;
+        font-size: 25px;
+      }
+    </style>
+  </head>
+
+  <body onload="gameStart()">
+    <div style="float: left; width: auto; height: 500px; background-color: #fff; border: 1px solid #a2a2a2; margin-right: 5px">
+      <table border="1px">
+        <tr>
+          <td>
+            <img src="./img/balao_azul_grande.png" alt="Balão azul" />
+          </td>
+
+          <td>
+            <span id="baloesInteiros" style="font-size: 40px"></span>
+          </td>
+        </tr>
+      </table>
+      <br />
+
+      <table border="1px">
+        <tr>
+          <td>
+            <img src="./img/balao_azul_grande_estourado.png" alt="Balão azul" />
+          </td>
+
+          <td>
+            <span id="baloesEstourados" style="font-size: 40px"></span>
+          </td>
+        </tr>
+      </table>
+      <br />
+
+      <table border="1" style="width: 140px; height: 132px">
+        <tr>
+          <td style="background: url('img/cronometro.png'); text-align: center">
+            <span id="cronometro" class="relogio"></span>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div
+      style="float: left; width: 600px; height: 500px; background: url('./img/cenario.png'); background-position: bottom"
+      id="cenario"
+    ></div>
+  </body>
+</html>
